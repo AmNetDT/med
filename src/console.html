@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8" />
+<title>MED</title>
+
+<!--Demo CSS-->
+<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/swipe.css" />
+<link rel="stylesheet" href="css/skin.css" />
+
+<!--Font Awesome-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!--jQuery-->
+<script src="js/jquery.min.js"></script>
+
+<!--Prettify-->
+  <script src="js/run_prettify.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto|Ropa+Sans" rel="stylesheet" />
+<!--Menu Script-->
+<script src="js/swipe.js"> </script>
+
+<!--Demo Only Script-->
+<script>
+$(document).ready(function(){
+
+var swipe = $(".swipe-menu");
+var theme = [
+"swipe-menu default-theme",
+"swipe-menu red-theme",
+"swipe-menu green-theme",
+"swipe-menu orange-theme",
+"swipe-menu pink-theme",
+"swipe-menu blue-theme",
+"swipe-menu maroon-theme",
+"swipe-menu jellyfish-theme",
+"swipe-menu black-theme",
+"swipe-menu purple-theme"
+];
+
+$(".default").click(function(){
+$(swipe).removeClass().addClass(theme[0]);
+});
+
+$(".red").click(function(){
+$(swipe).removeClass().addClass(theme[1]);
+});
+
+$(".green").click(function(){
+$(swipe).removeClass().addClass(theme[2]);
+});
+
+$(".orange").click(function(){
+$(swipe).removeClass().addClass(theme[3]);
+});
+
+$(".pink").click(function(){
+$(swipe).removeClass().addClass(theme[4]);
+});
+
+$(".blue").click(function(){
+$(swipe).removeClass().addClass(theme[5]);
+});
+
+$(".maroon").click(function(){
+$(swipe).removeClass().addClass(theme[6]);
+});
+
+$(".jellyfish").click(function(){
+$(swipe).removeClass().addClass(theme[7]);
+});
+
+$(".black").click(function(){
+$(swipe).removeClass().addClass(theme[8]);
+});
+
+$(".purple").click(function(){
+$(swipe).removeClass().addClass(theme[9]);
+});
+
+});
+</script>
+
+<style>
+@media only screen and (min-width: 620px){
+
+.show-popup {
+   width: 540px;
+   height: 400px;
+   box-shadow: 1px 2px 6px rgba(0, 0, 0, .5);
+   top: 50%;
+   left: 50%;
+   margin-left: -270px;
+   margin-top: -270px;
+   border-radius: 4px;
+  }
+.show-popup h4 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 16pt;
+  }
+
+.show-popup .close-popup{
+   width: 45px;
+   height: 40px;
+   line-height: 40px;
+   position: absolute;
+   right: 10px;
+   top: 2px;
+   outline: 0;
+   font-size: 14pt;
+   color: rgba(255, 255, 255, 0.5);
+   text-align: right;
+}
+
+
+.show-popup .close-popup:before{
+    content: "\f00d";
+   font-family: FontAwesome;
+   font-weight: 300;
+}
+
+
+}
+
+.codehim-footer{
+  display: block;
+  padding: 15px;
+   color: #777;
+  font-size: 13px;
+  text-align: center;
+}
+</style>
+<!-- Favicon icon -->
+        <link rel="icon" type="assets/images/png" sizes="16x16" href="assets/images/favicon.png">
+        <!-- Bootstrap Core CSS -->
+        <link href="assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+        <!-- This page CSS -->
+        <!-- chartist CSS -->
+        <link href="assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+        <!--c3 CSS -->
+        <link href="assets/node_modules/c3-master/c3.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/rila.css" rel="stylesheet">
+        <!-- Dashboard 1 Page CSS -->
+        <link href="css/pages/dashboard1.css" rel="stylesheet">
+        <!-- You can change the theme colors from here -->
+        <link href="css/colors/default.css" id="theme" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="assets/ext/consolehome.css" />
+        <link rel="stylesheet" type="text/css" href="assets/ext/forms.css" />
+        <link rel="stylesheet" type="text/css" href="assets/ext/console.css" />
+        <link rel="stylesheet" type="text/css" href="assets/ext/menu.css" />
+        <link rel="stylesheet" type="text/css" href="assets/ext/tree.css" />
+        <link rel="stylesheet" type="text/css" href="assets/ext/jquerycss.css" />
+
+        <script src="assets/ext/jquery.js"></script>
+        <script src="assets/ext/jquery-1.10.2.min.js"></script>
+        <script src="assets/ext/jquery-u.js"></script>
+        <script src="assets/ext/tree.js"></script>
+        <script src="assets/ext/pageloader.js"></script>
+        <script src="assets/ext/jquery-uis.1.10.2.min.js"></script>
+        <script src="jlib/pop.js"></script>
+        <script src="jlib/normarizr.js"></script>
+        <link rel='stylesheet' type="text/css" href="jlib/pop.css" />
+        <script src="assets/ext/alertdialog.js"></script>
+
+
+</head>
+<body>
+
+
+
+<!--Navigation-->
+<header class="swipe-menu default-theme">
+
+<div class="logo">
+MyEdgyDeal
+</div>
+<div class="codehim-search-trigger">
+</div>
+
+
+
+<!--Navigation Icon-->
+<div class="nav-icon">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+<nav class="codehim-nav">
+
+
+<div class="tab-container">
+<span class="tab-name tab-name1-active">Tab 1 </span>
+
+<span class="tab-name">Tab 2 </span>
+ </div> <!--//Tab Container-->
+
+
+
+
+<div class="tab tab-active">
+<ul class="menu-item">
+<li> <a href="#1"> Menu</a> </li>
+<li class="has-sub"> <span class="dropdown-heading">Menu </span>
+       <ul>
+       <li><a href="#2">dropdown item 1 </a> </li>
+       <li> <a href="#2">dropdown item 2 </a> </li>
+       </ul>
+</li>
+<li> <a href="#1"> Chrome </a> </li>
+<li> <a href="#1"> Firefox</a> </li>
+<li> <a href="#1"> Opera </a> </li>
+</ul>
+
+
+<ul class="my-codehim">
+<li> <a class="help" href="#1"> Help &amp; Feedback </a> </li>
+<li> <a class="updates" href="#1"> Subscribe Us</a> </li>
+<li> <a class="request" href="#1"> Plug ins</a></li>
+
+</ul>
+
+
+</div> <!--//Tab-->
+
+<div class="tab">
+
+
+<ul class="menu-item">
+<li> <a href="#1"> Second Level </a> </li>
+<li class="has-sub"> <span class="dropdown-heading"> Another Dropdown</span>
+       <ul>
+       <li> <a href="#2">sub item 1</a> </li>
+       <li> <a href="#2">sub item 2</a> </li>
+         <li> <a href="#2">sub item 3</a> </li>
+         <li> <a href="#2">sub item 4</a> </li>
+         <li> <a href="#2">sub item 5</a> </li>
+         <li> <a href="#2">sub item 6</a> </li>
+
+       </ul>
+</li>
+<li class="has-sub"> <span class="dropdown-heading"> Swipe Menu</span>
+       <ul>
+       <li> <a href="#2">sub item 1</a> </li>
+       <li> <a href="#2">sub item 2</a> </li>
+         <li> <a href="#2">sub item 3</a> </li>
+         <li> <a href="#2">sub item 4</a> </li>
+
+       </ul>
+</li>
+
+
+<li> <a href="#1"> Best navigation</a> </li>
+</ul>
+
+
+</div> <!--//Tab-->
+
+</nav>
+
+
+
+
+</header>
+
+<!--dim background effect when open menu-->
+<div class="dim-overlay"> </div>
+
+
+<!--//End Navigation-->
+
+
+
+
+
+
+<!--Swipe Detector For Open And Close Drawer Navigation-->
+<div class="openswipe" id="swipezone">
+</div>
+<!--Pop up for Subscription-->
+<div class="popup-subscribe">
+<div class="top">
+<span class="close-popup"></span>
+<h4> Subscribe Me </h4>
+</div>
+<div class="codehim-card">
+<h5 class="never-miss"> Never miss my upcoming projects ! </h5>
+<p>
+Free subscribe to my newsletter to get exclusive web coding projects and website templates that I shared only with my subscribers.
+ </p>
+<form>
+
+<input placeholder="Enter your email" name="email" type="text" class="mail-text" />
+<input type="submit" name="submit" value="Subscribe" />
+
+</form>
+   </div>
+</div> <!--//subscription popup-->
+
+<!--Pop up for Feedback-->
+
+<div class="popup-feedback">
+<div class="top">
+<span class="close-popup"></span>
+<h4> Feedback </h4>
+</div>
+
+
+<div class="codehim-card">
+<h5> I Love to hear from you ! </h5>
+<p> Write your precious feedback. </p>
+
+<form>
+
+<input placeholder="Enter your email" name="email" type="text" class="mail-text" />
+
+
+<textarea rows="6" name="feedback" type="text" class="feedback-text"></textarea>
+
+</form>
+   </div>
+
+
+</div> <!--//feedback popup-->
+
+<div id="contentbar" class="page-wrapper my-5 pt-5">
+                <div id="contentbar_inner" class="container-fluid my-5">
+
+                    <!-- inner window !-->
+
+                    <div class="row page-titles">
+                        <div class="col-md-5 align-self-center">
+                            
+                            <ol class="breadcrumb bg-white">
+                                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                <li class="breadcrumb-item active">Dashboard</li>
+                            </ol>
+                        </div>
+                        <div class="col-md-7 align-self-center">
+                            <a href="#" class="btn waves-effect waves-light btn btn-info pull-right hidden-sm-down">
+                                <i class='fa fa-question-circle'></i> FAQ</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col-lg-4 col-lg-3 col-md-5">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="m-t-5">
+                                        <p class="fa fa-users font-icon"></p>
+                                        <p class="card-title m-t-10">Number of Admin Users</p>
+                                        <p class="card-subtitle"></p>
+                                        <div class="row text-center justify-content-md-center">
+                                            <div class="col-4"><a href="javascript:void(0)" class="link">
+                                                    <i class="fa fa-users"></i>
+                                                    <span class="font-medium">23</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-lg-3 col-md-5">
+                            <div class="card">
+
+                                <div class="card-body text-center">
+                                    <div class="m-t-5">
+                                        <p class="fa fa-institution font-icon"></p>
+                                        <p class="card-title m-t-10">Schools</p>
+                                        <p class="card-subtitle"></p>
+                                        <div class="row text-center justify-content-md-center">
+                                            <div class="col-4"><a href="javascript:void(0)" class="link">
+                                                    <i class="fa fa-institution"></i>
+                                                    <span class="font-medium">3</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-lg-3 col-md-5">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="m-t-5">
+                                        <p class="fa fa-mortar-board font-icon"></p>
+                                        <p class="card-title m-t-10">Number of Student</p>
+                                        <p class="card-subtitle"></p>
+                                        <div class="row text-center justify-content-md-center">
+                                            <div class="col-4"><a href="javascript:void(0)" class="link">
+                                                    <i class="fa fa-tasks"></i>
+                                                    <font class="font-medium">254</font>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col-lg-4 col-lg-3 col-md-5">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="m-t-5">
+                                        <p class="fa fa-calendar font-icon"></p>
+                                        <p class="card-title m-t-10">Number of Post</p>
+                                        <p class="card-subtitle"></p>
+                                        <div class="row text-center justify-content-md-center">
+                                            <div class="col-4"><a href="javascript:void(0)" class="link">
+                                                    <i class="fa fa-send"></i>
+                                                    <span class="font-medium">254</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-lg-3 col-md-5">
+                            <div class="card">
+
+                                <div class="card-body text-center">
+                                    <div class="m-t-5">
+                                        <p class="fa fa-credit-card font-icon"></p>
+                                        <p class="card-title m-t-10">Payment Records</p>
+                                        <p class="card-subtitle"></p>
+                                        <div class="row text-center justify-content-md-center">
+                                            <div class="col-4"><a href="javascript:void(0)" class="link">
+                                                    <i class="fa fa-credit-card"></i>
+                                                    <span class="font-medium">254</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-lg-3 col-md-5">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="m-t-5">
+                                        <p class="fa fa-book font-icon"></p>
+                                        <p class="card-title m-t-10">Library Inventory</p>
+                                        <p class="card-subtitle"></p>
+                                        <div class="row text-center justify-content-md-center">
+                                            <div class="col-4"><a href="javascript:void(0)" class="link">
+                                                    <i class="fa fa-book"></i>
+                                                    <span class="font-medium">254</span>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end of inner window !-->
+                </div>
+
+            </div>
+
+
+
+<footer class="codehim-footer">
+<div class="col-md-12 p-3 m-0">
+					<p class="copyright">
+
+						Copyright &copy;<script>
+							document.write(new Date().getFullYear());
+						</script> All rights reserved <a href="http://myedgydeal.com">MyEdgyDeal</a>
+
+					</p>
+				</div>
+
+
+</footer>
+
+</body>
+</html>

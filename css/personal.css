@@ -1,0 +1,63 @@
+
+.customised-button{
+    cursor: pointer;
+    background-color:darkcyan;
+    color:#ffffff;
+    margin:2px 2px 2px 0px;
+    padding:5px 20px;
+    border-radius:50px;
+    border:1px;
+}
+
+.customised-button:hover {
+    cursor: pointer;
+    background-color: rgb(1, 167, 167);
+    color: #ffffff;
+    margin: 2px 2px 2px 0px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px
+}
+.customised-button:focus,
+.customised-button.focus {
+     -webkit-box-shadow: 0 0 0 0.2rem rgba(1, 167, 167, 0.027);
+     box-shadow: 0 0 0 0.2rem rgba(1, 167, 167, 0.103);
+}
+
+.customised-button.disabled,
+.customised-button:disabled {
+    color: #fff;
+    background-color: darkcyan;
+    border-color: darkcyan;
+}
+
+.customised-button:not(:disabled):not(.disabled):active,
+.customised-button:not(:disabled):not(.disabled).active,
+.show>.customised-button.dropdown-toggle {
+    color: #fff;
+    background-color: rgb(1, 167, 167);
+    border-color: rgb(1, 167, 167);
+}
+
+.customised-button:not(:disabled):not(.disabled):active:focus,
+.customised-button:not(:disabled):not(.disabled).active:focus,
+.show>.customised-button.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(1, 167, 167);
+    box-shadow: 0 0 0 0.2rem rgb(1, 167, 167);
+}
+.customised-button-white {
+    background-color: #ffffff;
+    color: darkcyan;
+    margin: 2px 2px 2px 0px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px
+}
+
+.text-darkcyan{
+    color:darkcyan;
+}
+
+.bg-darkcyan {
+    background-color: darkcyan;
+}
