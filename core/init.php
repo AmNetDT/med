@@ -6,7 +6,7 @@ $GLOBALS['config'] = array(
          'host' => '127.0.0.1',
          'username' => 'root',
          'password' => 'Netplus!1234',
-         'db' => 'riladb'
+         'db' => 'med'
     ), 
          'remember' => array(
          'cookie_name' => 'hash',

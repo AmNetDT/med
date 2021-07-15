@@ -39,7 +39,7 @@ require_once '../core/init.php';
         $salt = Hash::salt(32);
         
         try {
-          $user->create('users', array(
+          $user->create(array(
             'firstname'     => Input::get('firstname'),
             'lastname'      => Input::get('lastname'),
             'email'         => Input::get('email'),
@@ -50,13 +50,13 @@ require_once '../core/init.php';
             'joined'        => date('Y-m-d H:i:s')
           ));
 
-        echo 'You have successfully registered a student';
+        echo 'You have successfully registered';
           
           
         } catch (Exception $e) {
           die($e->getMessage());
         }
-
+     
       
         
 

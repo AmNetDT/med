@@ -101,20 +101,20 @@ require_once '../core/init.php';
       let confirm = $('#confirm').val();
       let token = $('#token').val();
 
-      //alert(firstname + ", " + lastname + ", " + email + "," + phone + ", " + syscategory + ", " + password + ", " + confirm + ", " + token)
+      
       $.ajax({
         url: "register_server",
         method: 'POST',
         data: {
 
-          'firstname': firstname,
-          'lastname': lastname,
-          'email': email,
-          'phone': phone,
-          'syscategory': syscategory,
-          'password': password,
-          'confirm': confirm,
-          'token': token
+          firstname: firstname,
+          lastname: lastname,
+          email: email,
+          phone: phone,
+          syscategory: syscategory,
+          password: password,
+          confirm: confirm,
+          token: token
 
         },
         success: function(data) {
